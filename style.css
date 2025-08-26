@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: #1B1668;
+    --cor-secundaria: #322D82;
+    --cor-terciaria: #6E66C7;
+    --cor-quartearia: #AEA7FF;
+    --cor_-2: #D8D5FA;
+    --cor_-1: #E0DEFF;
+
+    --fonte-logo: "Yeseva One", serif;
+    --fonte-titulo: "Lunasima", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-titulo); 
+}
+
+body {
+    background-color: var(--cor_-2);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-titulo);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    color: var(--cor-primaria);
+    padding: 2.375rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: var(--cor_-2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-primaria);
+    padding: 1% 0 4% 0;
+    height: 100%;
+}
+
+/* header - home.html div_1 */
+
+.div_1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 48%;
+    padding-left: 4%;
+}
+
+.titulo-nuvem {
+    background-image: url(assets/logo_nuvem.png);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    font-family: var(--fonte-logo);
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    margin: 0 0.75rem 0 0;
+    padding: 0 0 0 0.9rem;
+}
+
+.search-bar {
+    background-image: url(assets/lupa_input.png);
+    background-repeat: no-repeat;
+    background-position: 1.9% 50%;
+    border-radius: 2rem;
+    border: 0.3rem solid var(--cor-primaria);
+    outline: none;
+    font-size: 1rem;
+    color: var(--cor-primaria);
+    width: 26.5rem;
+    padding: 0.5rem 0 0.5rem 2rem;
+    background-color: var(--cor_-1);
+}
+
+.search-bar::placeholder {
+    color: var(--cor-primaria);
+    opacity: 0.7;
+}
+
+.div_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.perfil-titulo {
+    font-family: Lunasima;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0.625rem 0 0;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/nuvem_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4rem;
+    color: var(--cor_-2);
+    width: 96%;
+    padding: 18rem 0;
+}
+
+.conteudo-titulo {
+    font-family: var(--fonte-logo);
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.conteudo-texto {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-bottom: 1%;
+    max-width: 71.875rem;
+}
+
+.conteudo-botao {
+    border-radius: 1.4rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor_-1);
+    margin-top: 1.25rem;
+    width: 16.625rem;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--cor-primaria);
+}
+
+.conteudo-botao:hover {
+    text-shadow: 0.125rem 0rem 0.5625rem var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 11% 0;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.banner-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.7rem;
+    border-radius: 1.5rem;
+    box-shadow: 0rem 0rem 0.625rem var(--cor-primaria);
+    width: 20rem;
+    padding: 5rem 3.5rem;
+    background-color: var(--cor_-1);
+}
+
+.banner-card-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.banner-card-texto {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.banner-2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(assets/vec.png), url(assets/vecr4.png);
+    background-repeat: no-repeat;
+    background-position: 100% -5%, 0% 110%;
+    border-radius: 4rem;
+    width: 96%;
+    padding: 7% 0;
+    background-color: var(--cor-primaria);
+}
+
+#bann2 {
+    transform: translateX(0%);
+}
+
+
+
+.seta {
+    position: relative;
+    bottom: 50%;
+    left: 90%;
+    width: 2%;
+}
+
+.seta:nth-child(2) {
+    position: relative;
+    bottom: 50%;
+    left: 13.5%;
+    width: 2%;
+}
+
+.banner-img {
+    margin-right: 3%;
+}
+
+.img1 {
+    border-radius: 2rem;
+    width: 85%;
+    height: 100%;   
+}
+
+.div_roxa {
+    display: flex;
+    justify-content: center;
+}
+
+.roxa {
+    position: relative;
+    bottom: 12%;
+    left: 43%;
+    width: 1.8%;  
+}
+
+.seg {
+    left: 46%;
+}
+
+.tec {
+    left: 49%;
+}
+
+/* home - banner-cursos */
+
+.banner-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rem 0rem 0.325rem var(--cor-primaria);
+    border-radius: 2rem;
+    color: var(--cor-primaria);
+    padding: 3.5% 5%;
+    margin-right: 3%;
+    background-color: var(--cor_-1);
+}
+
+.banner-cursos-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner-cursos-texto {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.div-clicar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.clicar {
+    background-image: url(/assets/S.png), url(/assets/bolinha_numero.png);
+    background-repeat: no-repeat;
+    background-position: 3.5% 50%, 0% 50%;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    text-align: center;
+    margin: 6% 0;
+    width: 20rem;
+    padding: 3% 0;
+    background-color: var(--cor-quartearia);
+}
+
+.css-clicar {
+    background-image: url(/assets/C.png), url(/assets/bolinha_numero.png);
+}
+
+.javascript-clicar {
+    background-image: url(/assets/J.png), url(/assets/bolinha_numero.png);
+    margin: 6% 0 0 0;
+}
+
+
+
+.main-html {
+    display: flex;
+    align-items: flex-start;
+    color: var(--cor-primaria);
+    height: 100%;
+}
+
+.main_titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5% 0 2% 4%;
+}
+
+.sele {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4%;
+}
+
+.main_div1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_video {
+    border-radius: 1.5rem;
+    margin-bottom: 3%;
+    width: 49rem;
+    height: 25rem;
+}
+
+.div_progresso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.barra {
+    margin: 0 2% 0 5%;
+    width: 65%;
+    height: 80%;
+}
+
+.progresso {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.div_relogio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.main_h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.relogio {
+    margin-right: 2%;
+}
+
+.certificado {
+    margin: 0 2% 0 18%;
+}
+
+.pessoas {
+    margin-right: 2%;
+}
+
+.main_descricao {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 7%;
+}
+
+.main_titulo_descricao {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8125rem;
+}
+
+.main_paragrafo {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    margin-bottom: 2%;
+}
+
+.main_titulo_conteudo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.75rem;
+    margin-bottom: 1.375rem;
+}
+
+.conteudo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_clicar {
+    background-image: url(assets/bolinha_numero.png), url(assets/play_HTML.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%, right 2% center;
+    background-size: 7.2%, 4%;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    margin-bottom: 4%;
+    width: 90%;
+    padding: 2% 0 2% 10%;
+    background-color: var(--cor-quartearia);
+}
+
+.main_clicar:nth-child(1) {
+    background-image: url(assets/numero_1.png), url(assets/bolinha_numero.png), url(assets/play_HTML.png);
+    background-position: 2.5% 50%, 0% 50%, right 2% center;
+    background-size: 1.5%, 7.2%, 4%;
+}
+
+.main_clicar:nth-child(2) {
+    background-image: url(assets/numero_2.png), url(assets/bolinha_numero.png), url(assets/play_HTML.png);
+    background-position: 2.7% 50%, 0% 50%, right 2% center;
+    background-size: 1.9%, 7.2%, 4%;
+}
+
+.main_clicar:nth-child(3) {
+    background-image: url(assets/numero_3.png), url(assets/bolinha_numero.png), url(assets/play_HTML.png);
+    background-position: 2.6% 50%, 0% 50%, right 2% center;
+    background-size: 1.95%, 7.2%, 4%;
+}
+
+.main_clicar:nth-child(4) {
+    background-image: url(assets/numero_4.png), url(assets/bolinha_numero.png), url(assets/play_HTML.png);
+    background-position: 2.6% 50%, 0% 50%, right 2% center;
+    background-size: 1.9%, 7.2%, 4%;
+}
+
+.main_clicar:hover {
+    background-image: url(assets/bolinha_numero.png), url(assets/play-houver.png);
+    color: var(--cor_-1);
+    background-color: var(--cor-terciaria);
+}
+
+.main_clicar:hover:nth-child(1) {
+    background-image: url(assets/numero_1.png), url(assets/bolinha_numero.png), url(assets/play-houver.png);
+}
+
+.main_clicar:hover:nth-child(2) {
+    background-image: url(assets/numero_2.png), url(assets/bolinha_numero.png), url(assets/play-houver.png);
+}
+
+.main_clicar:hover:nth-child(3) {
+    background-image: url(assets/numero_3.png), url(assets/bolinha_numero.png), url(assets/play-houver.png);
+}
+
+.main_clicar:hover:nth-child(4) {
+    background-image: url(assets/numero_4.png), url(assets/bolinha_numero.png), url(assets/play-houver.png);
+}
+
+.main_general {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.div_tamanho {
+    padding: 2.5% 4%;
+}
+
+.title_general {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.subtitle_general {
+    background-image: url(assets/numero_1.png), url(assets/bolinha_numero.png);
+    background-repeat: no-repeat;
+    background-position: 1% 50%, 0% 50%;
+    background-size: 0.6%, 2.8%;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5625rem 0;
+    width: 95%;
+    padding: 0.6% 0;
+    padding-left: 4%;
+    background-color: var(--cor-quartearia);
+}
+
+.numero-2 {
+    background-image: url(assets/numero_2.png), url(assets/bolinha_numero.png);
+    background-position: 1% 50%, 0% 50%;
+    background-size: 0.8%, 2.8%;
+}
+
+.numero-3 {
+    background-image: url(assets/numero_3.png), url(assets/bolinha_numero.png);
+    background-position: 1% 50%, 0% 50%;
+    background-size: 0.8%, 2.8%;
+}
+
+.numero-4 {
+    background-image: url(assets/numero_4.png), url(assets/bolinha_numero.png);
+    background-position: 1% 50%, 0% 50%;
+    background-size: 0.8%, 2.8%;
+}
+
+.div_main_geral {
+    display: flex;
+    margin-top: 2%;
+}
+
+.divisoria_U {
+    width: 25%;
+}
+
+.divisoria_D {
+    width: 70%;
+}
+
+.palavras {
+    text-align: justify;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.2rem var(--cor-primaria);
+    font-size: 1.5rem;
+    margin-bottom: 4.5%;
+    width: 75%;
+    padding: 5.5% 0;
+    padding-left: 10%;
+    background-color: var(--cor_-1);
+}
+
+.palavras:nth-child(4) {
+    text-align: justify;
+    margin-bottom: 4.5%;
+    padding: 8.5% 0;
+    padding-left: 10%;
+}
+
+.palavras:hover {
+    background-color: var(--cor-quartearia);
+}
+
+.palavras_nav {
+    display: block;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.2rem var(--cor-primaria);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor_-1);
+    text-decoration: none;
+    width: 85%;
+    padding: 4.5% 0;
+    background-color: var(--cor-primaria);
+}
+
+.main_video_2 {
+    border-radius: 1.5rem;
+    width: 105%;
+    height: 100%;
+}
