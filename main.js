@@ -81,7 +81,7 @@ function Artificial() {
     document.querySelector(".banner-cursos-titulo").innerHTML = "Inteligência Artificial";
     document.querySelector(".banner-cursos-texto").innerHTML = 
     "Mergulhe com profundidade no <br> universo da Inteligência Artificial <br> aplicada a diferentes <br> áreas da atuação.";
-
+       
     document.querySelector(".clicar").textContent = "IA programação";
     document.querySelector(".clicar").href = "/Aulas/past_ia/IA.html";
     document.querySelector(".clicar").style.backgroundImage = "url(/assets/IAP.png), url(/assets/bolinha_numero.png)";
