@@ -4,7 +4,6 @@ function bottomzero() {
     banner2.scrollIntoView({ behavior: "smooth"});  /* Atributo: scrollIntoView || duas opções: smooth e auto || auto: sem animação || smooth: com animação */
 }
 
-
 let cont = 0
 
 function transitar() {    
@@ -44,6 +43,7 @@ function FrontEnd() {
     document.querySelector(".banner-cursos-titulo").innerHTML = "Front-End";
     document.querySelector(".banner-cursos-texto").innerHTML = 
     "Desenvolva experiências com <br> HTML, CSS e JavaScript. <br> Aprenda boas práticas do <br> desenvolvimento web.";
+    document.querySelector(".img1").src=("/assets/Frontend.jpg");
 
     document.querySelector(".clicar").textContent = "HTML";
     document.querySelector(".clicar").href = "/Aulas/past_html/HTML.html";
@@ -63,6 +63,7 @@ function UX() {
     document.querySelector(".banner-cursos-titulo").innerHTML = "UX e Design";
     document.querySelector(".banner-cursos-texto").innerHTML = 
     "Crie diferentes layouts para <br> plataformas digitais. Construa <br> e expanda seu conhecimento <br> nas principais áreas:";
+
 
     document.querySelector(".clicar").textContent = "UI";
     document.querySelector(".clicar").href = "/Aulas/past_ui/UI.html";
@@ -94,4 +95,3 @@ function Artificial() {
     document.querySelector(".javascript-clicar").href = "";
     document.querySelector(".javascript-clicar").style.backgroundImage = "url(/assets/IPU.png), url(/assets/bolinha_numero.png)";
 }
- 
