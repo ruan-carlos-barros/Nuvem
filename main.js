@@ -81,7 +81,7 @@ function UX() {
 function Artificial() {
     document.querySelector(".banner-cursos-titulo").innerHTML = "Inteligência Artificial";
     document.querySelector(".banner-cursos-texto").innerHTML = 
-    "Mergulhe com profundidade no <br> universo da Inteligência Artificial <br> aplicada a diferentes <br> áreas da atuação.";
+    "Mergulhe com profundidade no <br> universo da Inteligência <br> Artificial aplicada a diferentes áreas";
        
     document.querySelector(".clicar").textContent = "IA programação";
     document.querySelector(".clicar").href = "/Aulas/past_ia/IA.html";

@@ -6,6 +6,8 @@
     --cor-secundaria: #322D82;
     --cor-terciaria: #6E66C7;
     --cor-quartearia: #AEA7FF;
+    --cor-back: #4635B1;
+    --cor-background: #4635B9;
     --cor_-2: #D8D5FA;
     --cor_-1: #E0DEFF;
 
@@ -48,7 +50,7 @@ main {
     height: 100%;
 }
 
-/* header - home.html div_1 */
+/* header - home.html*/
 
 .div_1 {
     display: flex;
@@ -104,6 +106,8 @@ main {
     margin: 0 0.625rem 0 0;
 }
 
+/* main - home.html */
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -124,8 +128,6 @@ main {
     margin-bottom: 1.25rem;
     animation: fadein 1s ease-in;
 }
-
-
 
 .conteudo-texto {
     text-align: center;
@@ -192,10 +194,16 @@ main {
     text-align: center;
     line-height: 1.7rem;
     border-radius: 1.5rem;
-    box-shadow: 0rem 0rem 0.625rem var(--cor-primaria);
+    animation: mymove 2.5s infinite;
     width: 20rem;
     padding: 5rem 3.5rem;
     background-color: var(--cor_-1);
+}
+
+@keyframes mymove {
+    0% {box-shadow: 0 0 0.2rem var(--cor-primaria);}
+    50% {box-shadow: 0 0 0.9rem var(--cor-back);}
+    100% {box-shadow: 0 0 0.2rem var(--cor-background);}
 }
 
 .banner-card-titulo {
@@ -221,15 +229,9 @@ main {
     background-position: 100% -5%, 0% 110%;
     border-radius: 4rem;
     width: 96%;
-    padding: 9% 0 ;
+    padding: 9% 0;
     background-color: var(--cor-primaria);
 }
-
-#bann2 {
-    transform: translateX(0%);
-}
-
-
 
 .seta {
     position: relative;
@@ -252,6 +254,7 @@ main {
 
 .img1 {
     border-radius: 2rem;
+    border: var(--cor-back) 0.1rem solid;
     width: 85%;
     height: 100%;   
 }
@@ -276,7 +279,6 @@ main {
     left: 49%;
 }
 
-/* home - banner-cursos */
 
 .banner-cursos {
     display: flex;
@@ -337,7 +339,7 @@ main {
     margin: 6% 0 0 0;
 }
 
-
+/* main - HTML.html */
 
 .main-html {
     display: flex;
@@ -507,6 +509,8 @@ main {
 .main_clicar:hover:nth-child(4) {
     background-image: url(assets/numero_4.png), url(assets/bolinha_numero.png), url(assets/play-houver.png);
 }
+
+/* main | HTML-atributos.html */
 
 .main_general {
     display: block;
