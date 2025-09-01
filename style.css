@@ -100,7 +100,7 @@ main {
 }
 
 .perfil-titulo {
-    font-family: Lunasima;
+    font-family: var(--fonte-titulo);
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0 0.625rem 0 0;
@@ -146,7 +146,6 @@ main {
 }
 
 .conteudo-botao {
-    border-radius: 1.4rem;
     border: none;
     cursor: pointer;
     font-family: var(--fonte-titulo);
@@ -157,9 +156,23 @@ main {
     width: 16.625rem;
     padding: 0.75rem 1.25rem;
     background-color: var(--cor-primaria);
+    border-radius: 1.4rem;
     transition: 0.3s;
     animation: pulse 2s infinite;
     animation-delay: 1.5s;
+    position: relative;
+}
+
+.conteudo-botao::after {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    width: 14.2rem;
+    padding: 1.5rem 1.25rem;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to bottom right, var(--cor-primaria), var(--cor-background));
+    border-radius: 1.4rem;
 }
 
 @keyframes pulse {
@@ -177,7 +190,8 @@ main {
 .conteudo-botao:hover,
 .conteudo-botao:focus {
     text-shadow: 0.125rem 0rem 0.5625rem var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    box-shadow: 1.25rem 0 5rem var(--cor-primaria), -1.25rem 0 5rem var(--cor-background);
+    z-index: 0;
 }
 
 .banner {
@@ -255,6 +269,7 @@ main {
 .img1 {
     border-radius: 2rem;
     border: var(--cor-back) 0.1rem solid;
+    max-width: 100%;
     width: 85%;
     height: 100%;   
 }
